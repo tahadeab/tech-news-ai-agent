@@ -1,0 +1,63 @@
+{
+  "language": "both",
+
+  "rss_feeds": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/"
+    },
+    {
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+      "name": "Wired",
+      "url": "https://www.wired.com/feed/rss"
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index"
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://hnrss.org/frontpage"
+    }
+  ],
+
+  "keywords": {
+    "include": [],
+    "exclude": []
+  },
+
+  "llm": {
+    "base_url": "https://api.openai.com/v1",
+    "api_key": "",
+    "model": "gpt-4o-mini",
+    "max_tokens": 2000,
+    "temperature": 0.3
+  },
+
+  "telegram": {
+    "bot_token": "",
+    "chat_id": ""
+  },
+
+  "scheduler": {
+    "enabled": true,
+    "send_time": "08:00",
+    "timezone": "Asia/Riyadh"
+  },
+
+  "collect": {
+    "hours_back": 24,
+    "max_articles_per_feed": 10,
+    "max_articles_in_report": 20
+  },
+
+  "output": {
+    "report_language": "both",
+    "save_local_html": true,
+    "save_local_md": true,
+    "cache_file": "cache/articles.json"
+  }
+}
